@@ -40,9 +40,11 @@ class Assignment1
 
     System.out.println("Final exam grade: " + exam);
 
-    System.out.println("Overall grade: " + (homework * .35) + (quiz * .15) + (exam * .50));
-    //Will fix this tmrw
-
+    int hwrounded = (int) homework;
+    int quizrounded = (int) quiz;
+    int examrounded = (int) exam;
+    
+    System.out.println("Overall grade: " + (hwrounded + quizrounded + examrounded) / 3);
 
 
     
